@@ -1,0 +1,7 @@
+{
+  "status": "pending_frozen_sft_rollouts",
+  "profiled_questions": 0,
+  "planned_initial_questions": 100,
+  "rollouts_per_question": 4,
+  "no_rollouts_executed": true
+}

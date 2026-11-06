@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-05",
+  "environment": "Windows Python 3.12.3; isolated CPU dependencies in CPU_ENV_FREEZE.txt",
+  "cpu_pytest": {
+    "passed": 41,
+    "skipped": 1,
+    "skip_reason": "Linux /bin/bash executor unavailable on Windows"
+  },
+  "real_tokenizer_preflight": {
+    "sft_validated": 400,
+    "max_qa_prompt_tokens": 545,
+    "model_type": "qwen3_5",
+    "split_question_overlap": 0
+  },
+  "bash_syntax": "all three mini shell files passed Git Bash -n (escalated due MSYS sandbox named-object restriction)",
+  "upstream_changed_files": [],
+  "gpu_executed": false,
+  "wikipedia_downloaded": false,
+  "data_counts": {
+    "sft": 400,
+    "train": 300,
+    "dev": 100,
+    "test": 200
+  },
+  "tokenizer_files_sha256": {
+    "chat_template.jinja": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+    "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c"
+  },
+  "sources": [
+    "https://huggingface.co/datasets/alireza7/GrepSeek-ColdStart-SFT-10k",
+    "https://huggingface.co/datasets/RUC-NLPIR/FlashRAG_datasets",
+    "https://huggingface.co/Qwen/Qwen3.5-2B"
+  ],
+  "download_transport": "hf-mirror.com; offline input hashes recorded, Hub revision unavailable; no model weights downloaded",
+  "git_origin": "https://github.com/KindofCrazy/grepseek.git",
+  "git_upstream": "https://github.com/alirezasalemi7/grepseek.git",
+  "remaining": [
+    "Linux real shell executor test",
+    "official pinned-container dataset/model integration",
+    "CUDA SFT forward/backward/optimizer steps and checkpoint reload",
+    "official Wikipedia corpus download and shell query",
+    "agentic GRPO two-step update, memory, timings and metrics",
+    "Base/SFT/GRPO benchmark evaluation on dev, then frozen test"
+  ]
+}

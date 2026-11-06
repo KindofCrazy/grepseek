@@ -1,0 +1,5 @@
+[
+  {"label":"base", "model":"Qwen/Qwen3.5-2B", "base_url":"http://localhost:8000/v1"},
+  {"label":"sft", "model":"/workspace/mini/exports/sft", "base_url":"http://localhost:8001/v1"},
+  {"label":"grpo", "model":"/workspace/mini/exports/grpo", "base_url":"http://localhost:8002/v1"}
+]

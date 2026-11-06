@@ -1,0 +1,105 @@
+{
+  "raw_rows": 10000,
+  "eligible_rows": 9973,
+  "train_rows": 800,
+  "validation_rows": 100,
+  "context_budget": 12288,
+  "filter_reason_counts_nonexclusive": {
+    "near_heldout_question_quarantine": 15,
+    "near_duplicate_question_quarantine": 12
+  },
+  "answer_correctness": {
+    "unknown": 10000
+  },
+  "token_statistics": {
+    "prompt_tokens": {
+      "p50": 440.0,
+      "p75": 450.0,
+      "p90": 465.0,
+      "p95": 480.0,
+      "p99": 508.0100000000002,
+      "max": 561
+    },
+    "assistant_tokens": {
+      "p50": 387.0,
+      "p75": 427.0,
+      "p90": 484.0,
+      "p95": 571.0,
+      "p99": 632.0,
+      "max": 838
+    },
+    "tool_observation_tokens": {
+      "p50": 2334.0,
+      "p75": 3168.0,
+      "p90": 3972.1000000000004,
+      "p95": 4570.0999999999985,
+      "p99": 5789.0700000000015,
+      "max": 10865
+    },
+    "total_sequence_tokens": {
+      "p50": 3182.0,
+      "p75": 4030.0,
+      "p90": 4881.1,
+      "p95": 5498.0,
+      "p99": 6749.030000000001,
+      "max": 11956
+    },
+    "trainable_assistant_tokens": {
+      "p50": 372.0,
+      "p75": 412.0,
+      "p90": 469.0,
+      "p95": 551.0,
+      "p99": 612.0,
+      "max": 823
+    },
+    "masked_tokens": {
+      "p50": 2793.5,
+      "p75": 3625.0,
+      "p90": 4430.1,
+      "p95": 5031.149999999998,
+      "p99": 6253.030000000001,
+      "max": 11337
+    }
+  },
+  "length_retention_all_tokenizable": {
+    "4096": 0.7653,
+    "6144": 0.9778,
+    "8192": 0.9984,
+    "12288": 1.0,
+    "16384": 1.0
+  },
+  "sources": {
+    "hotpotqa": 5000,
+    "nq": 4999,
+    "unknown": 1
+  },
+  "selected_sources": {
+    "hotpotqa": 401,
+    "nq": 399
+  },
+  "selected_tool_calls": {
+    "2": 435,
+    "1": 209,
+    "3": 156
+  },
+  "selected_length_bins": {
+    "4096": 477,
+    "6144": 240,
+    "8192": 68,
+    "12288": 15
+  },
+  "selected_max_tokens": 11956,
+  "selected_command_categories": {
+    "search_narrow_pipeline": 704,
+    "search_capped": 264
+  },
+  "selected_multihop_proxy": 521,
+  "selected_repairs": 0,
+  "unknown_fields_policy": "No exported gold/evidence correctness labels: answer_correctness/task_success stay unknown. Semantic equivalence remains unreviewed.",
+  "sampling": "Deterministic source/turn/length/behavior strata; commands annotate diversity, not equal-count quotas.",
+  "shortfalls": {
+    "train": 0,
+    "validation": 0
+  },
+  "near_duplicate_limit": "Lexical MinHash/Jaccard candidates only, conservatively quarantined. Semantic paraphrases are NOT certified absent; manual review required."
+}

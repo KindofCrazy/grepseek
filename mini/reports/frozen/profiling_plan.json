@@ -1,0 +1,10 @@
+{
+  "status": "not_executed",
+  "question_count": 100,
+  "rollouts_per_question": 4,
+  "total_rollouts": 400,
+  "seed": 42,
+  "checkpoint_required": true,
+  "budget_rmb_total_user_stated": 200,
+  "cost_estimate": "unknown_until_first_measured_local_run; no rented GPU or paid API invoked"
+}

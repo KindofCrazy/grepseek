@@ -1,0 +1,23 @@
+{
+  "real_input_rows": {
+    "nq:train": 79168,
+    "nq:dev": 8757,
+    "hotpotqa:train": 90447,
+    "hotpotqa:dev": 7405
+  },
+  "invalid_basic_rows": {},
+  "filter_reasons_nonexclusive": {
+    "sft_train_overlap_excluded_by_policy": 800,
+    "heldout_dev_question_overlap": 9,
+    "duplicate_rl_question": 62,
+    "sft_validation_overlap": 100
+  },
+  "near_check_status": {
+    "not_assessed_unselected": 185177,
+    "lexical_candidates_checked_semantics_unreviewed": 600
+  },
+  "scope": "CPU data audit, not rollout difficulty or training success",
+  "candidate_count": 600,
+  "profiled_count": 0,
+  "semantic_review": "lexical candidates only; unresolved semantic equivalence"
+}

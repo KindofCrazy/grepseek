@@ -1,0 +1,257 @@
+{
+  "source": "RUC-NLPIR/FlashRAG_datasets",
+  "datasets": {
+    "nq": {
+      "split": "test",
+      "raw_count": 3610,
+      "valid_count": 3610,
+      "invalid_basic_count": 0,
+      "selected": 30,
+      "ranked_candidates_examined": 30,
+      "examined_rejections": {}
+    },
+    "hotpotqa": {
+      "split": "dev",
+      "raw_count": 7405,
+      "valid_count": 7405,
+      "invalid_basic_count": 0,
+      "selected": 30,
+      "ranked_candidates_examined": 30,
+      "examined_rejections": {}
+    },
+    "triviaqa": {
+      "split": "test",
+      "raw_count": 11313,
+      "valid_count": 11313,
+      "invalid_basic_count": 0,
+      "selected": 30,
+      "ranked_candidates_examined": 30,
+      "examined_rejections": {}
+    },
+    "2wikimultihopqa": {
+      "split": "dev",
+      "raw_count": 12576,
+      "valid_count": 12576,
+      "invalid_basic_count": 0,
+      "selected": 30,
+      "ranked_candidates_examined": 30,
+      "examined_rejections": {}
+    },
+    "bamboogle": {
+      "split": "test",
+      "raw_count": 125,
+      "valid_count": 125,
+      "invalid_basic_count": 0,
+      "selected": 30,
+      "ranked_candidates_examined": 30,
+      "examined_rejections": {}
+    }
+  },
+  "actual_examples": {
+    "nq": [
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers"
+        ],
+        "id": "test_0",
+        "question": "who got the first nobel prize in physics",
+        "golden_answers": [
+          "Wilhelm Conrad Röntgen"
+        ]
+      },
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers"
+        ],
+        "id": "test_1",
+        "question": "when is the next deadpool movie being released",
+        "golden_answers": [
+          "May 18, 2018"
+        ]
+      },
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers"
+        ],
+        "id": "test_2",
+        "question": "which mode is used for short wave broadcast service",
+        "golden_answers": [
+          "Olivia",
+          "MFSK"
+        ]
+      }
+    ],
+    "hotpotqa": [
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers",
+          "metadata"
+        ],
+        "id": "dev_0",
+        "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+        "golden_answers": [
+          "yes"
+        ]
+      },
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers",
+          "metadata"
+        ],
+        "id": "dev_1",
+        "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+        "golden_answers": [
+          "Chief of Protocol"
+        ]
+      },
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers",
+          "metadata"
+        ],
+        "id": "dev_2",
+        "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+        "golden_answers": [
+          "Animorphs"
+        ]
+      }
+    ],
+    "triviaqa": [
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers"
+        ],
+        "id": "test_0",
+        "question": "Who was the man behind The Chipmunks?",
+        "golden_answers": [
+          "David Seville"
+        ]
+      },
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers"
+        ],
+        "id": "test_1",
+        "question": "What star sign is Jamie Lee Curtis?",
+        "golden_answers": [
+          "Scorpio",
+          "Skorpio",
+          "Scorpio (disambiguation)"
+        ]
+      },
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers"
+        ],
+        "id": "test_2",
+        "question": "Which Lloyd Webber musical premiered in the US on 10th December 1993?",
+        "golden_answers": [
+          "Sunset Blvd",
+          "West Sunset Boulevard",
+          "Sunset Boulevard",
+          "Sunset Bulevard",
+          "Sunset Blvd."
+        ]
+      }
+    ],
+    "2wikimultihopqa": [
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers",
+          "metadata"
+        ],
+        "id": "dev_0",
+        "question": "Who is the mother of the director of film Polish-Russian War (Film)?",
+        "golden_answers": [
+          "Małgorzata Braunek"
+        ]
+      },
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers",
+          "metadata"
+        ],
+        "id": "dev_1",
+        "question": "Which film came out first, Blind Shaft or The Mask Of Fu Manchu?",
+        "golden_answers": [
+          "The Mask Of Fu Manchu",
+          "Mask of Fu Manchu",
+          "The Mask of Fu Manchu"
+        ]
+      },
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers",
+          "metadata"
+        ],
+        "id": "dev_2",
+        "question": "When did John V, Prince Of Anhalt-Zerbst's father die?",
+        "golden_answers": [
+          "12 June 1516"
+        ]
+      }
+    ],
+    "bamboogle": [
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers"
+        ],
+        "id": "test_0",
+        "question": "Who was president of the United States in the year that Citibank was founded?",
+        "golden_answers": [
+          "james madison"
+        ]
+      },
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers"
+        ],
+        "id": "test_1",
+        "question": "What rocket was the first spacecraft that ever approached Uranus launched on?",
+        "golden_answers": [
+          "Titan IIIE"
+        ]
+      },
+      {
+        "original_fields": [
+          "id",
+          "question",
+          "golden_answers"
+        ],
+        "id": "test_2",
+        "question": "In what year was the company that was founded as Sound of Music added to the S&P 500?",
+        "golden_answers": [
+          "1999"
+        ]
+      }
+    ]
+  }
+}

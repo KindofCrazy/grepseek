@@ -37,3 +37,8 @@ cold_start_sft/output/
 .vscode/
 .ipynb_checkpoints/
 /output*/
+
+# Local Mini validation environment and downloaded source archive.
+/.venv-mini/
+/upstream.tar.gz
+/sft-dataset-info.json

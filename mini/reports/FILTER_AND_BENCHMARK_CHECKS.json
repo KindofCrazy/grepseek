@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-05",
+  "status": "CPU checks passed; model evaluation not executed",
+  "benchmark_counts": {
+    "nq": 30,
+    "hotpotqa": 30,
+    "triviaqa": 30,
+    "2wikimultihopqa": 30,
+    "bamboogle": 30
+  },
+  "max_prompt_tokens": 500,
+  "benchmark_sha256": "218de8b32c0d82a2efc52e32313fd3db1952c40ba24c4dc191db7c4d6c9209f6",
+  "repeated_preparation_same_sample_hash": true,
+  "known_question_exclusions": 10866,
+  "training_guard_inputs": [
+    "mini/curated/sft_train.parquet",
+    "mini/curated/rl_candidates.jsonl"
+  ],
+  "training_guard_exact_overlap": 0,
+  "planned_checkpoint_trajectories": 450,
+  "actual_model_trajectories": 0,
+  "length_config": {
+    "sft_curation_total": 12288,
+    "sft_launcher_default_total": 9216,
+    "rl_prompt": 1024,
+    "rl_response_including_tools": 8192,
+    "rl_total": 9216
+  },
+  "selection_reasons": {
+    "near_heldout_sft": 15,
+    "near_duplicate_sft": 12,
+    "eligible_sft": 9973
+  },
+  "metric_code_hash": "f2c4545ea7834968628d0c2c276cc03e3674f0d540e030c8d3cd68e8450bbed0",
+  "evaluation_code_hash": "741f768e8b784b48d2917b406db5894b60847e652beae29b0fe3374767de0264",
+  "gpu_validation": "pending"
+}

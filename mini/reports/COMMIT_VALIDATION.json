@@ -1,0 +1,24 @@
+{
+  "cpu_tests": {
+    "passed": 79,
+    "skipped": 1,
+    "skip_reason": "official Linux /bin/bash executor unavailable on Windows"
+  },
+  "upstream_tree_sha": "05dfddb07fdfaeb2cdc9a501e2cd6dad2ad7497d",
+  "frozen_manifest_sha256": {
+    "benchmark_manifest.json": "afad6eb26483e71ad1327ae939cf4d6be1a8f15f366f93d526761d602ce4a5d4",
+    "benchmark_source_audit.json": "bc164f6336ce235dfc3e8031424af951178396610c7e220b4e88a5315cdb1c2e",
+    "profiling_plan.json": "0efdebe6c4e6a69e5eb915b5896358507cc02f3c82d51b11c91baa504369c8a3",
+    "profiling_question_ids.json": "6d89c57a12e89d6aed5ddf27a5cf9b15c0f2d56c09dd6f9b8af84d8c46680d12",
+    "rl_profile_report.json": "391b2f589584b490eff2b48f006dbd32ebbc52fd961f3158a5741bc820acd26b",
+    "rl_sampling_manifest.json": "5cc9ded3b4dd127a7c06bbef2d5f9f68a63dcf7dd4b75113e561b4eed2209abb",
+    "sft_candidate_1200_config.json": "de3179848cdd3d9587204bb150e3131adef002487b51fcb968db2d88189867b1",
+    "sft_candidate_300_config.json": "d338153c2c476b045d693895f1052dbfd015a819fa971e2cfc6373bb7bce5990",
+    "sft_candidate_800_config.json": "91b9a72895efc0ae2059fde7f4ecc31ef7ec7448db47425da180a5e22585fa7a",
+    "sft_curation_report.json": "063baf754d45a69d8ac32a7298a9427f896e4b2b046afbfe2d76090c20107aec",
+    "sft_manifest.json": "e4d8e263588b8cf4cb2dcc433cc032d7b95f16df1b15810adfb01ad94296bc9e"
+  },
+  "gpu_training_executed": false,
+  "model_evaluation_executed": false,
+  "readiness": "CPU preparation complete; environment, complete corpus, SFT checkpoint, difficulty profiling and GPU smoke remain pending"
+}

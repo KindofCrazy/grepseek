@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "scope": "actual_cpu_data_only",
+  "counts": {
+    "sft_train": 800,
+    "sft_val": 100,
+    "rl_train_candidates": 600,
+    "rl_dev": 100,
+    "final_test": 200
+  },
+  "checked_sft_actual_token_masks": 900,
+  "exact_question_overlaps": {
+    "sft_train__sft_val": 0,
+    "sft_train__rl_train_candidates": 0,
+    "sft_train__rl_dev": 0,
+    "sft_train__final_test": 0,
+    "sft_val__rl_train_candidates": 0,
+    "sft_val__rl_dev": 0,
+    "sft_val__final_test": 0,
+    "rl_train_candidates__rl_dev": 0,
+    "rl_train_candidates__final_test": 0,
+    "rl_dev__final_test": 0
+  },
+  "hash_verification": "all exported artifact hashes passed",
+  "nested_ablation_sizes": {
+    "300": 300,
+    "800": 800,
+    "1200": 1200
+  },
+  "gpu_or_paid_api_executed": false,
+  "semantic_equivalence": "not certified; see manual_review.jsonl",
+  "difficulty_profile": "not executed; pending frozen SFT checkpoint",
+  "pytest": {
+    "passed": 68,
+    "skipped": 1,
+    "skip_reason": "Official /bin/bash executor requires Linux; Windows CPU audit does not execute dataset commands"
+  },
+  "official_source_integrity": {
+    "files_checked": 630,
+    "changed_files": []
+  },
+  "real_schema_preview": {
+    "sft_rows_audited": 10000,
+    "wiki_actual_passages_read": 3,
+    "wiki_compressed_prefix_bytes": 2097152,
+    "full_corpus_downloaded": false
+  },
+  "profile_plan": {
+    "questions": 100,
+    "independent_rollouts_per_question_planned": 4,
+    "executed_rollouts": 0
+  },
+  "remaining_validation": [
+    "Human review of lexical/semantic-equivalence candidates",
+    "Future local frozen-SFT profiling and actual difficulty bucket counts",
+    "Linux official-container runtime observation hooks and GPU smoke",
+    "Actual on-policy GRPO rollout/update, optimization metrics and benchmark results"
+  ]
+}

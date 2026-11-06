@@ -1,0 +1,39 @@
+{
+  "arguments": {
+    "out": "mini/data",
+    "local_input": "mini/.cache",
+    "model": "mini/.cache/tokenizer",
+    "model_revision": "main",
+    "sft_revision": "main",
+    "qa_revision": "main",
+    "seed": 42,
+    "sft_count": 400,
+    "train_count": 300,
+    "dev_count": 100,
+    "test_count": 200,
+    "max_length": 9216
+  },
+  "revisions": {
+    "local_input": "D:\\yk\\Study\\code\\project\\agent\\grepseek\\mini\\.cache"
+  },
+  "model_commit": null,
+  "inputs_sha256": {
+    "sft": "9bbb12f90f01b25053bd7cba73c312b6c13e68ec31988b1773ed1abbbf8e5981",
+    "qa": "2aa9c5d654c390387a8a9d0703262f9a29d8ebbc7ac4a3bda38f21960ebad11f"
+  },
+  "counts": {
+    "sft": 400,
+    "train": 300,
+    "dev": 100,
+    "test": 200
+  },
+  "test_policy": "Frozen held-out partition of FlashRAG dev; select checkpoints using dev.jsonl only.",
+  "files": {
+    "dev.jsonl": "2a98a9e5ebf2852d93e37df2cc809ebbaa58737d021e78706800136c888bb799",
+    "sft.jsonl": "d70cee08c5e1bb0b3147e9804445f3f007e93929d8d177c64708867ce0caa817",
+    "sft.parquet": "a9a8557f03e646a41e1deb4c9877eaf8f5775f20f2802183f4ef381bda847a68",
+    "sft_rejected.jsonl": "3a40c6e5918ea8d7bb3a26858443542b0065726a09efa1653cb984368aa7e931",
+    "test.jsonl": "895a486f46a99209e63e8214024d34a8b9444438f723ed3f65b2c1471d346c39",
+    "train.jsonl": "f969a98d5846191dfc38a5ec4da922fb54730e60d431ea1bb812e30afabc68bf"
+  }
+}

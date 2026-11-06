@@ -1,0 +1,171 @@
+{
+  "sft_schema": "id: large_string\nmessages: list<element: struct<role: string, content: string>>\n  child 0, element: struct<role: string, content: string>\n      child 0, role: string\n      child 1, content: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 314",
+  "sft_rows": 10000,
+  "sft_samples": [
+    {
+      "original_id": "train_46273",
+      "original_fields": [
+        "id",
+        "messages"
+      ],
+      "roles": [
+        "system",
+        "user",
+        "assistant",
+        "tool",
+        "assistant",
+        "tool",
+        "assistant"
+      ],
+      "initial_user": "Query: Welshly Arms is influenced by the Motown Records R&B group form 1960's and 1970's who still travel with one remaining original member, who is that member?",
+      "final_assistant": "<think>\nBased on the search results, Welshly Arms lists \"The Temptations\" as one of their influences. The Temptations are a Motown R&B group from the 1960s and 1970s. The search for \"The Temptations\" and \"original member\" identified Otis Williams as the \"founder and last surviving original member\" of the group who continues to perform with them.\n</think>\n<answer>\nOtis Williams\n</answer>"
+    },
+    {
+      "original_id": "nq_train_7364",
+      "original_fields": [
+        "id",
+        "messages"
+      ],
+      "roles": [
+        "system",
+        "user",
+        "assistant",
+        "tool",
+        "assistant"
+      ],
+      "initial_user": "Query: who played the bearded lady in the greatest showman movie",
+      "final_assistant": "<think>\nThe search results clearly identify Keala Settle as the actress who portrayed Lettie Lutz, the bearded lady, in the 2017 film \"The Greatest Showman.\" Both retrieved entries confirm this role and mention her performance of the song \"This Is Me\" from the movie. Therefore, the actor playing the bearded lady is Keala Settle.\n</think>\n<answer>\nKeala Settle\n</answer>"
+    },
+    {
+      "original_id": "train_81861",
+      "original_fields": [
+        "id",
+        "messages"
+      ],
+      "roles": [
+        "system",
+        "user",
+        "assistant",
+        "tool",
+        "assistant",
+        "tool",
+        "assistant",
+        "tool",
+        "assistant"
+      ],
+      "initial_user": "Query: The Gangavalli River and Maglore are both located in what country?",
+      "final_assistant": "<think>\nThe search results for \"Gangavalli River\" explicitly state that the river flows entirely within the state of Karnataka in India. The same passage mentions that the river connects to the \"Mangalore area,\" which corresponds to the \"Maglore\" mentioned in the question. Since both the river and the city are located within the state of Karnataka, they are both situated in India.\n</think>\n<answer>\nIndia\n</answer>"
+    },
+    {
+      "original_id": "nq_train_69225",
+      "original_fields": [
+        "id",
+        "messages"
+      ],
+      "roles": [
+        "system",
+        "user",
+        "assistant",
+        "tool",
+        "assistant",
+        "tool",
+        "assistant"
+      ],
+      "initial_user": "Query: which device is used to convert ac to dc",
+      "final_assistant": "<think>\nBased on the search results, the device used to convert alternating current (AC) to direct current (DC) is identified as a **rectifier**. The first search result explicitly states that metal rectifiers were used to \"convert alternating current to direct current,\" and the second search result mentions that a \"set of rectifiers (diode bridge) is required to convert AC to DC\" in automotive alternators. Additionally, the \"Electric power conversion\" entry lists devices that can convert AC to DC, confirming the general category.\n</think>\n<answer>\nrectifier\n</answer>"
+    }
+  ],
+  "qa_examples": {
+    "nq_train": {
+      "original_fields": [
+        "id",
+        "question",
+        "golden_answers"
+      ],
+      "id": "train_0",
+      "question": "total number of death row inmates in the us",
+      "golden_answers": [
+        "2,718"
+      ],
+      "metadata_keys": []
+    },
+    "nq_dev": {
+      "original_fields": [
+        "id",
+        "question",
+        "golden_answers"
+      ],
+      "id": "dev_0",
+      "question": "who sings does he love me with reba",
+      "golden_answers": [
+        "Linda Davis"
+      ],
+      "metadata_keys": []
+    },
+    "hotpotqa_train": {
+      "original_fields": [
+        "id",
+        "question",
+        "golden_answers",
+        "metadata"
+      ],
+      "id": "train_0",
+      "question": "Which magazine was started first Arthur's Magazine or First for Women?",
+      "golden_answers": [
+        "Arthur's Magazine"
+      ],
+      "metadata_keys": [
+        "type",
+        "level",
+        "supporting_facts",
+        "context"
+      ]
+    },
+    "hotpotqa_dev": {
+      "original_fields": [
+        "id",
+        "question",
+        "golden_answers",
+        "metadata"
+      ],
+      "id": "dev_0",
+      "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+      "golden_answers": [
+        "yes"
+      ],
+      "metadata_keys": [
+        "type",
+        "level",
+        "supporting_facts",
+        "context"
+      ]
+    }
+  },
+  "corpus": {
+    "repository": "PeterJinGo/wiki-18-corpus",
+    "full_corpus_downloaded": false,
+    "partial_bytes_downloaded": 2097152,
+    "partial_sha256": "ba4eb3f015040c9e6a3a4a2374d04317ea33940645589503beab01111b4563c4",
+    "container_member": "data00/jiajie_jin/flashrag_indexes/wiki_dpr_100w/wiki_dump.jsonl",
+    "real_samples": [
+      {
+        "id": "0",
+        "contents": "\"Evan Morris\"\nEvan Morris Evan L. Morris (January 26, 1977 – July 9, 2015) was a lobbyist for Genentech and its parent corporation Roche in Washington, D.C. He began his career in Washington as an intern in the Clinton White House at age 18. He began his lobbying work at Patton Boggs before moving on to Roche in 2005. His early work at Roche involved government policy on Medicare and Medicaid, flu preparedness, and hepatitis C. His work at Genentech is being investigated by the Wall Street Journal, which states that “shaping up to be one of the biggest U.S. investigations into"
+      },
+      {
+        "id": "1",
+        "contents": "\"Horatio Hale\"\nconsisted of an Algonkin vocabulary, which he gathered from a band of Indians who had camped on the college grounds. Three years later, when the United States Exploring Expedition to little-known portions of the globe was organised under Charles Wilkes, Hale was recommended, while yet an undergraduate, for the post of ethnologist and philologist, and obtained the appointment. From 1838 to 1842, he was employed in the work of the expedition, visiting South America, Australasia, Polynesia, and North-western America, then known as Oregon. From this point he returned overland. The Hale Passages of Puget Sound were named in recognition of"
+      },
+      {
+        "id": "2",
+        "contents": "\"Dibba Al-Hisn\"\nis believed to be the site where the Portuguese during the Habsburg Dynasty built a fort and a wall around the city. In August 1648, the Arabs besieged Muscat, Oman, and on October 31, 1648, a treaty was signed between the two opponents. The terms required the Portuguese to build the fortress of Kuriyat, Dibba Al-Hisn and Matrah (Oman). Note: There have been land disputes between Dibba Al-Hisn and Dibba Al-Baya, but these were resolved in the 1990s. </div> A branch of the Community College of the University of Sharjah is available in Dibba Al-Hisn. Alkhalidya Secondary School Dibba Al-Hisn"
+      }
+    ],
+    "observed_schema": {
+      "id": "str",
+      "contents": "str"
+    },
+    "transport": "first 2097152 compressed bytes via HTTP range from hf-mirror.com; no search commands executed"
+  },
+  "tokenizer": "actual Qwen/Qwen3.5-2B cached artifacts; SHA256 recorded in sft_manifest.json"
+}
