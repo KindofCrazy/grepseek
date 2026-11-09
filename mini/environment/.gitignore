@@ -1,0 +1,19 @@
+# Publish portable preparation utilities; keep host profiles and one-off jobs local.
+*
+!.gitignore
+!README.md
+!requirements.txt
+!bootstrap_ubuntu.sh
+!setup_python.sh
+!check_search.py
+!corpus-source.json
+!download_corpus.sh
+!prepare_corpus.py
+!inventory.py
+!pace_semantic_fingerprint.c
+!pace_semantic_fingerprint.py
+!test_pace_semantic_fingerprint.py
+!test_rl_step_extension.py
+!validate_pace_rebuild.py
+!pace-head-wide.json
+!wslconfig.example

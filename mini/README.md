@@ -1,5 +1,19 @@
 # GrepSeek Mini：Qwen3.5-2B 训练前检查
 
+当前 4B/PyTRIO 的并发续跑、PACE 调优和“训练结束后评测完整500题”设置见
+[ACCELERATION.md](ACCELERATION.md)，云端记录见 [EXPERIMENT_LOGGING.md](EXPERIMENT_LOGGING.md)。
+Ubuntu/WSL 的通用准备步骤见 [运行环境](environment/README.md)。
+主机连接配置、凭据、运行目录和生成的实验报告不提交 Git。
+
+Windows + PyTRIO 路线的 WSL/CPU 环境、完整语料和真实搜索准备见
+[environment/README.md](environment/README.md)。该环境独立于下文原始 verl GPU 容器路线。
+
+PyTRIO 可用模型 Qwen3.5-4B 的冻结数据适配、模板设置与复现命令见 [QWEN35_4B.md](QWEN35_4B.md)。
+
+已实现的 PyTRIO SFT / 真实搜索 RL、dynamic sampling、预算控制与训练记录见
+[pytrio_backend/README.md](pytrio_backend/README.md)。以下保留原始 2B / verl 路线说明。
+实际轨迹、模型 checkpoint 引用与验收记录写入本地 `mini/runs/`、`mini/reports/`。
+
 新增的数据筛选、难度预采样与训练诊断流程见 [CURATION.md](CURATION.md)。
 精确阈值、12k/8k预算区别和五数据集各30题评测见 [FILTERS_AND_EVAL.md](FILTERS_AND_EVAL.md)。
 冻结的抽样 ID、配置与输入 Hash 同步保存在 [reports/frozen](reports/frozen/)；完整数据文件按文档另行准备。
@@ -7,7 +21,7 @@
 本地关联仓库：https://github.com/KindofCrazy/grepseek 。官方源码版本见
 [UPSTREAM.json](UPSTREAM.json)。新增文件均位于 `mini/`，官方论文配置和工具、Reward、GRPO 实现保持原样。
 这里的 Base 指初始化模型 `Qwen/Qwen3.5-2B`（官方 post-trained checkpoint，并非 `-Base` 型号）。
-当前交付是训练前适配；没有执行 GPU 训练，也没有声称单卡显存足够。
+下文 2B / verl 路线仍是训练前适配；4B / PyTRIO 的真实训练记录见上面的后端验收报告。
 
 ## 环境
 

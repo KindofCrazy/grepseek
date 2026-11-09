@@ -1,2 +1,6 @@
 # Preserve the audited upstream bytes and content hashes on every platform.
 * -text
+
+# New CPU backend shell entry points must remain usable on Windows checkouts.
+mini/pytrio_backend/*.sh text eol=lf
+mini/environment/*.sh text eol=lf

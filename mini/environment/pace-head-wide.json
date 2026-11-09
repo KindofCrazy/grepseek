@@ -1,0 +1,6 @@
+{
+  "pace_head_candidate_lines": 250000,
+  "pace_head_materialize_bytes": 67108864,
+  "pace_head_term_postings": 500000,
+  "pace_head_sa_matches": 200000
+}

@@ -1,0 +1,5 @@
+# Pin the CPU wheel explicitly; installing this file cannot pull CUDA Torch.
+--extra-index-url https://download.pytorch.org/whl/cpu
+pytrio==0.2.9
+torch==2.10.0+cpu
+swanlab==0.10.4

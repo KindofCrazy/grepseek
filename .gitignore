@@ -42,3 +42,20 @@ cold_start_sft/output/
 /.venv-mini/
 /upstream.tar.gz
 /sft-dataset-info.json
+
+# Project-local WSL virtual disks, archives and CPU runtime.
+/.wsl/
+/.venv-pytrio/
+
+# Local authentication and model weight files.
+.env
+.env.*
+!.env.example
+.netrc
+.pytrio/
+.swanlab/
+.ssh/
+*.pem
+*.key
+*.safetensors
+*.ckpt

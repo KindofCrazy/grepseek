@@ -1,0 +1,9 @@
+{
+  "repo": "PeterJinGo/wiki-18-corpus",
+  "filename": "wiki-18.jsonl.gz",
+  "revision": "69c1c00ffe7c5554c68d8548355cb22e46aabc51",
+  "bytes": 5123307260,
+  "sha256": "7abd929223399cd63c52b499f289bf4f9039be1e9f8c43e1cb3938305b2317db",
+  "metadata_origin": "https://huggingface.co/api/datasets/PeterJinGo/wiki-18-corpus",
+  "verified_date": "2026-11-07"
+}

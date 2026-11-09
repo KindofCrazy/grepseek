@@ -3,9 +3,13 @@ runs/
 exports/
 .cache/
 curated/
+curated-*/
 profile-plan/
 profile-first100/
 profile-analysis/
 rl-sampling/
 benchmark30/
 __pycache__/
+
+# Generated experiment reports and raw trajectories stay local.
+/reports/

@@ -1,0 +1,8 @@
+[wsl2]
+memory=2GB
+processors=4
+swap=1GB
+# Optional: set swapFile to a directory on a drive with sufficient free space.
+
+[experimental]
+autoMemoryReclaim=gradual
